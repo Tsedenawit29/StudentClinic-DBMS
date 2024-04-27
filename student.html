@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clinic Student Dashboard</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    /* Inline CSS for demonstration purposes */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+    }
+    header {
+      background-color: #555;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    main {
+      padding: 20px;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    .card p {
+      color: #666;
+    }
+    .button {
+      background-color: #555;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+    .button:hover {
+      background-color: #555;
+    }
+    input[type="text"],
+    input[type="number"] {
+      padding: 10px;
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome, Student!</h1>
+  </header>
+  <main>
+    <div class="container">
+      <div class="card">
+        <h2>Student Information</h2>
+        <form action="submit_student_info.php" method="post">
+          <input type="text" name="name" placeholder="Enter your name" required><br>
+          <input type="number" name="id" placeholder="Enter your Id number" required><br>
+          <input type="text" name="department" placeholder="Enter your department" required><br>
+          <input type="number" name="year" placeholder="Enter your year" required><br>
+          <input type="text" name="phone" placeholder="Enter your phone number" required><br>
+          <button type="submit" class="button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

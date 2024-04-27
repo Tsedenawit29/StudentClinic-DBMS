@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrator Page</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    /* Inline CSS for demonstration purposes */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+      overflow: hidden;
+    }
+    nav ul li {
+      float: left;
+    }
+    nav ul li a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    nav ul li a:hover {
+      background-color: #ddd;
+    }
+    main {
+      padding: 20px;
+    }
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+    p{
+        text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome, Administrator!</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="add_patient.php">Staff Management</a></li>
+      <li><a href="update_patient.php">Student Management</a></li>
+      <li><a href="view_reports.php">Clinic Management</a></li>
+      <!-- Add more options here -->
+    </ul>
+  </nav>
+  <main>
+  
+    <p>Welcome to the administrator dashboard. Here you can manage clinic,staff,student and perform other administrative tasks.</p>
+    <!-- Add more content specific to administrators -->
+  </main>
+  <footer>
+    <p>&copy; 2024 Student Clinic Database Management System</p>
+  </footer>
+</body>
+</html>
